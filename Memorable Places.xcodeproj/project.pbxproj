@@ -7,12 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		ADDCC15E1B265DE300363B58 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ADDCC15D1B265DE300363B58 /* CoreLocation.framework */; };
+		ADDCC1621B26903600363B58 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ADDCC1611B26903600363B58 /* MapKit.framework */; };
 		ADE628C01B252DAF0061F1DF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADE628BF1B252DAF0061F1DF /* AppDelegate.swift */; };
 		ADE628C21B252DAF0061F1DF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADE628C11B252DAF0061F1DF /* ViewController.swift */; };
 		ADE628C51B252DAF0061F1DF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ADE628C31B252DAF0061F1DF /* Main.storyboard */; };
 		ADE628C71B252DAF0061F1DF /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ADE628C61B252DAF0061F1DF /* Images.xcassets */; };
 		ADE628CA1B252DAF0061F1DF /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = ADE628C81B252DAF0061F1DF /* LaunchScreen.xib */; };
 		ADE628D61B252DAF0061F1DF /* Memorable_PlacesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADE628D51B252DAF0061F1DF /* Memorable_PlacesTests.swift */; };
+		ADE628E01B2570E70061F1DF /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADE628DF1B2570E70061F1DF /* TableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -26,6 +29,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		ADDCC15D1B265DE300363B58 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		ADDCC1611B26903600363B58 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		ADE628BA1B252DAF0061F1DF /* Memorable Places.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Memorable Places.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		ADE628BE1B252DAF0061F1DF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		ADE628BF1B252DAF0061F1DF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -36,6 +41,7 @@
 		ADE628CF1B252DAF0061F1DF /* Memorable PlacesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Memorable PlacesTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		ADE628D41B252DAF0061F1DF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		ADE628D51B252DAF0061F1DF /* Memorable_PlacesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Memorable_PlacesTests.swift; sourceTree = "<group>"; };
+		ADE628DF1B2570E70061F1DF /* TableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +49,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ADDCC1621B26903600363B58 /* MapKit.framework in Frameworks */,
+				ADDCC15E1B265DE300363B58 /* CoreLocation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -59,6 +67,8 @@
 		ADE628B11B252DAF0061F1DF = {
 			isa = PBXGroup;
 			children = (
+				ADDCC1611B26903600363B58 /* MapKit.framework */,
+				ADDCC15D1B265DE300363B58 /* CoreLocation.framework */,
 				ADE628BC1B252DAF0061F1DF /* Memorable Places */,
 				ADE628D21B252DAF0061F1DF /* Memorable PlacesTests */,
 				ADE628BB1B252DAF0061F1DF /* Products */,
@@ -79,6 +89,7 @@
 			children = (
 				ADE628BF1B252DAF0061F1DF /* AppDelegate.swift */,
 				ADE628C11B252DAF0061F1DF /* ViewController.swift */,
+				ADE628DF1B2570E70061F1DF /* TableViewController.swift */,
 				ADE628C31B252DAF0061F1DF /* Main.storyboard */,
 				ADE628C61B252DAF0061F1DF /* Images.xcassets */,
 				ADE628C81B252DAF0061F1DF /* LaunchScreen.xib */,
@@ -156,6 +167,7 @@
 		ADE628B21B252DAF0061F1DF /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 0710;
 				LastUpgradeCheck = 0630;
 				ORGANIZATIONNAME = LiquidGroup;
 				TargetAttributes = {
@@ -213,6 +225,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				ADE628C21B252DAF0061F1DF /* ViewController.swift in Sources */,
+				ADE628E01B2570E70061F1DF /* TableViewController.swift in Sources */,
 				ADE628C01B252DAF0061F1DF /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -409,6 +422,7 @@
 				ADE628DB1B252DAF0061F1DF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		ADE628DC1B252DAF0061F1DF /* Build configuration list for PBXNativeTarget "Memorable PlacesTests" */ = {
 			isa = XCConfigurationList;
@@ -417,6 +431,7 @@
 				ADE628DE1B252DAF0061F1DF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
